@@ -1,0 +1,334 @@
+/*
+* 
+* @author Jamilton Damasceno
+* @version 0.1
+*/
+
+/* ========================= layout ======================== */
+
+/* -- Barra de navegação -- */
+.img-logo {
+	height: 60px;
+	width: 100px;
+	display: block;
+	background-image: url("imagens/logo1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	color: #008000;
+}
+
+nav.navbar-transparente {
+	padding: 15px 0px;
+	padding-right: 0px;
+	background: rgba(0, 0, 0, 0.6);
+	border: none;
+}
+
+.navbar-brand{
+	padding: 5px 15px;
+}
+
+.divisor{
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 16px 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a, footer .nav a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
+	color: #9bf0e1;
+}
+
+/* -- corpo -- */
+
+html, body, .capa{
+	height: 100%;
+
+}
+
+
+body {
+
+   background-image: url("imagens/capa.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   font-family: Helvetica,Arial,sans-serif;
+}
+
+.max-width {
+   width: 100%;
+   max-width: 800px;
+   margin: 0 auto;
+   background-color: #fff;
+}
+
+.capa {
+	display: table;
+	width: 100%;
+
+
+}
+
+.texto-capa {
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+
+
+
+}
+
+
+
+/* -- Figura animada -- */
+@keyframes animacao-box{
+	
+	from{
+		background: transparent; 
+		background-position: center;
+		border-radius: 0px;
+		margin-left: 100%;
+      width: 100%;
+	}
+	
+	to{
+		background: transparent;
+		background-image: url("imagens/logo.png");
+	   background-repeat: no-repeat;
+	   background-position: center;
+	   margin: auto;
+		border-radius: 800px;
+		margin-left: 0%;
+      width: 100%;
+	}
+}
+
+#box-animacao{
+	width: 400px;
+	height: 600px;
+	background: transparent;
+	background-position: relative;
+	animation-name: animacao-box;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	
+	
+	}
+
+/* -- Botões -- */
+
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	padding: 10px 35px;
+	margin: 0px 15px;
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
+
+}
+
+.btn-azul {
+	background: #0000CD;
+}
+.btn-azul:hover {
+	background-color: #6495ED;
+}
+
+.btn-verde {
+	background: green;
+}
+.btn-verde:hover {
+	background-color: #90EE90;
+}
+
+/* -- Seção Serviço -- */
+#servicos {
+	background:  #FFEFD5;
+	padding: 20px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	justify-content: center;
+
+
+
+
+}
+
+.albuns{
+	padding: 10px 0px 10px 0px;
+	align-items: center;
+	justify-content: center;
+
+	
+
+}
+
+#recursos {
+	padding: 20px;
+	padding-bottom: 20px;
+}
+
+#servicos h2, #servicos h3, #servicos h4{
+	color: 	#0000CD;
+
+}
+
+p{
+
+	font-size: 16px;
+	color: #000000;
+
+}
+
+#recursos h3, label{
+	color: 	#F0FFF0;
+   margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+	display: flex;
+	align-items: left;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px 10px;
+	background: transparent;
+	width: 500px;
+	box-shadow: box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;;
+
+}
+
+section form, {
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+form label{
+font-size: 17px;
+margin: 8px;
+
+text-align: left;
+
+}
+
+#esc{
+	padding: 15px;
+	outline: none;
+	border: 0;
+	margin-bottom: 0px;
+	font-size: 15px;
+	transition: all 0.5s;
+
+}
+
+
+#texttt{
+	 
+	border: 0;
+	font-size: 15px;
+	margin-bottom: 20px;
+	transition: all 0.5s;
+
+}
+
+
+form button{
+	padding: 10px;
+	cursor: pointer;
+	font-size: 16px;
+	background: white;
+	border: 2px solid #f5f5f5;
+	color: black;
+	transition: background 0.4s, color 0.4s;
+	margin-bottom: 10px;
+
+
+}
+
+.botao:hover{
+	background: green;
+
+}
+
+/*---rodapé---*/
+
+footer {
+	background: #FFEFD5;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+/* ========================= Tipografia ======================== */
+
+
+/* -- textos -- */
+
+h1 {
+	font-size: 100px;
+	font-weight: 800;
+	letter-spacing: -4px;
+	margin-bottom: 100px;
+}
+
+h2{
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	margin-bottom: 100px;
+}
+
+h3{
+	font-size: px25;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+}
+
+#rodape h4{
+	color: #9194960;
+	font-size: 12px;
+	text-transform: uppercase;
+
+}
+
+
+
+/* -- Obrigado.html -- */
+.main{
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+background: #101026;
+flex-direction: column;
+}
+
+.textt{
+	font-size: 45px;
+	color: #f5f5f5;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.btnn{
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	padding: 10px 35px;
+	margin: 0px 15px;
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
+}
+.btnn:hover{
+	border-radius: 16px;
+}
